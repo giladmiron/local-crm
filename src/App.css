@@ -1,22 +1,254 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#navBar {
+  height: 50px;
   display: flex;
-  flex-direction: column;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+#navBar, .search-area{
+  background-color:  #65b384;
+}
+
+#navBar span {
+font-weight: bold;
+font-size: 20px;
+margin-left: 15px;
+
+}
+
+body {
+  background-color: #ecf0f1;
+  font-family: Montserrat;
+}
+
+.bedges{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  justify-items: center;
+}
+
+.bedge{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  justify-items: center;
+}
+
+.one {
+  background-color: #2ecc71;
+}
+
+.two{
+  background-color: #3498db;
+}
+
+.three{
+  background-color: #f1c40f;
+}
+
+.four{
+  background-color: #e74c3c;
+}
+
+
+#arrow1{
+  font-size:20px;
+}
+
+#arrow2{
+  font-size:20px;
+}
+
+.fas {
+  font-size: 60px;
+  border-radius: 20%;
+  margin-left: 16px;
+  margin-top: 16px;
+}
+
+.circle {
+  border-radius: 50%;
+  width: 95px;
+  height: 95px;
+  border: 2px black groove;
+}
+
+.search-area {
+  height: 45px;
+  position: absolute;
+  top:0;
+  right: 10px;
+}
+
+.tableHeader {
+  display: grid;
+  grid-template-columns: repeat(7,1fr);
+  background-color: #cccccc;
+  width: 100vw;
+  -webkit-box-shadow: -1px -1px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: -1px -1px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: -1px -1px 5px 0px rgba(0,0,0,0.75);
+height: 40px;
+font-weight: bold;
+font-size: 25px;
+align-items: center;
+justify-content: center;
+}
+
+.tableHeader div{
+  display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+.actions {
+display: grid;
+grid-template-columns: 1fr 1fr;
+}
+
+.actions div{
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-left: 70px;
+}
+
+.updateUserArea{
+display: grid;
+grid-template-rows: 2fr 1fr 1fr 1fr 1fr;
+}
+
+.updateUserArea div{
+  position: relative;
+}
+
+.edit {
+  position: absolute;
+  background-color: black;
+  color:white;
+  width: 300px;
+  height: 300px;
+margin-left: 35%;
+margin-top: 10%;
+display: grid;
+grid-template-rows: repeat(4,1fr);
+
+}
+
+.exit{
+  position: absolute;
+  font-weight: bold;
+  right: 0px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+#search{
+  margin-right: 20px;
+}
+
+#select-input{
+  margin-right: 20px;
+}
+
+.client{
+  display: grid;
+  grid-template-columns: repeat(7,1fr);
+  margin: 12px;
+  height: 25px;
+align-items: center;
+justify-content: center;
+-webkit-box-shadow: 0px 0px 13px 0px rgba(0,0,0,1);
+-moz-box-shadow: 0px 0px 13px 0px rgba(0,0,0,1);
+box-shadow: 0px 0px 13px 0px rgba(0,0,0,1);
+border: 1px black dotted;
+}
+
+.client div{
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+flex-wrap: wrap;
+}
+
+.actions h1{
+  -webkit-box-shadow: 0px 0px 13px 0px rgba(0,0,0,1);
+-moz-box-shadow: 0px 0px 13px 0px rgba(0,0,0,1);
+box-shadow: 0px 0px 13px 0px rgba(0,0,0,1);
+border: 1px black dotted;
+width: 300px;
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: center;
+  margin-left: 70px;
+}
+
+.fa-check-circle{
+margin-left: 100px;
+font-size: 50px;
+cursor: pointer;
+}
+
+.edit button {
+  background-color: #2ecc71;
+  font-size: 50px;
+  font-weight: bold;
   color: white;
 }
 
-.App-link {
-  color: #09d3ac;
+#checkOne{
+  font-size: 28px;
+  margin-left: 100px;
+}
+#checkTwo{
+  font-size: 28px;
+  margin-left: 282px;
+}
+#checkThree{
+  font-size: 28px;
+  margin-left: 355px;
+}
+
+span {
+  cursor: pointer;
+}
+
+.charts{
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+
+input:hover {
+  -webkit-box-shadow: 0px 0px 13px 0px rgba(0,0,0,1);
+  -moz-box-shadow: 0px 0px 13px 0px rgb(56, 36, 36);
+  box-shadow: 0px 0px 13px 0px rgba(0,0,0,1);
+  transition-duration: 2s;
+}
+
+.insertNewUser{
+  display: grid;
+  grid-template-rows: 2fr repeat(5,1fr) 2fr;
+  grid-gap: 5px;
+  height: 100%;
+}
+
+.updateUserArea{
+  display: grid;
+  grid-template-rows: 2fr repeat(5,1fr);
+  grid-gap: 5px;
+  height: 100%;
+}
+
+.navSpan:hover {
+  text-decoration: underline;
+transition-duration: 0.5s;
+-webkit-box-shadow: 0px 0px 13px 0px white;
+-moz-box-shadow: 0px 0px 13px 0px white;
+box-shadow: 0px 0px 13px 0px white;
+}
+
+.navSpan{
+  color:white;
+  text-decoration: underline;
 }
